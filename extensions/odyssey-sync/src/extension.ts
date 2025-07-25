@@ -23,7 +23,6 @@ async function commitFilesWithProgress() {
         if (!response.ok) {
           throw new Error("API error: " + response.status);
         }
-        vscode.window.showInformationMessage("File saved successfully!");
       } catch (err: any) {
         vscode.window
           .showErrorMessage("Unable to save file", "Manage Extension")
